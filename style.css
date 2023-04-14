@@ -1,0 +1,108 @@
+/* Background of the body */
+body {
+  background: linear-gradient(90deg, #2c3e50, #bdc3c7);
+  margin: 0;
+}
+
+/* Cotainer of the stopwatch */
+.container {
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to bottom right, #ffffff, #efdcdc);
+    border-radius: 6%;
+    margin: 50px auto;
+    box-shadow: inset 0px 1px 6px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading of the Container i.e Stopwatch and its icon */
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.header {
+    text-align: center;
+    padding: 2px;
+    text-shadow: 1px 1px #999999;
+    text-decoration: solid;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.header span{
+    padding: 8px;
+}
+
+/* Time container */
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Assigning different colours to all the text */
+#hr,
+#min,
+#sec {
+  color: #333333;
+  margin: 0 5px;
+}
+
+#hr {
+  color: #ffcc66;
+}
+
+#min {
+  color: #66ccff;
+}
+
+#sec {
+  color: #99cc66;
+}
+.text {
+    font-size: 15px;
+    color: #a44343;
+    padding: 3px;
+}
+
+.digit {
+  font-size: 60px;
+  text-shadow: 1px 1px #999999;
+}
+
+/* Button Part of the stopwatch */
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#start {
+  background-color: #66cc99;
+}
+
+#stop {
+  background-color: #ff9933;
+}
+
+#reset {
+  background-color: #ff6666;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

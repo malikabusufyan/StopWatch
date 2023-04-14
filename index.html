@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Container of the File -->
+    <div class="container">
+
+        <!-- Heading at the top -->
+        <div class="header">
+            <p>
+                <span><i class="bi bi-stopwatch"></i></span>StopWatch
+            </p>
+        </div>
+
+        <!-- Time Section -->
+        <div id="time">
+            <!-- Hours -->
+            <span class="digit" id="hr">00</span>
+            <span class="text">Hr</span>
+            <!-- Min -->
+            <span class="digit" id="min">00</span>
+            <span class="text">Min</span>
+            <!-- Sec -->
+            <span class="digit" id="sec">00</span>
+            <span class="text">Sec</span>
+            <!-- Milliseconds -->
+            <span class="digit" id="count">00</span>
+        </div>
+
+        <!-- Button Section -->
+        <div id="button-container">
+            <button class="btn" id="start" onclick="start()">Start</button>
+            <button class="btn" id="stop" onclick="stop()">Stop</button>
+            <button class="btn" id="reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
